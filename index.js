@@ -16,7 +16,7 @@ const days = [
 
 const currentDay = days[new Date().getDay()];
 
-app.get("/api/taskOne", (request, response) => {
+app.get("/api", (request, response) => {
   response.status(200).json({
     slack_name: request.query.slack_name,
     track: request.query.track,
